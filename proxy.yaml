@@ -190,5 +190,5 @@ rules:
   - RULE-SET,privateip,DIRECT,no-resolve
   - RULE-SET,cnip,DIRECT
   - RULE-SET,telegramip,📲 电报消息,no-resolve
-  - GEOIP,CN,Direct
+  - GEOIP,CN,DIRECT
   - MATCH,规则外路由选择
