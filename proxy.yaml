@@ -80,13 +80,6 @@ rule-providers:
     path: ./rules/youtube.mrs
     url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/youtube.mrs"
     interval: 86400
-  bilibili:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/bilibili.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/bilibili.mrs"
-    interval: 86400
   private:
     type: http
     behavior: domain
@@ -176,7 +169,6 @@ rules:
   - IP-CIDR,221.228.32.0/24,PROXY
   - IP-CIDR,154.21.91.0/24,DIRECT
   - RULE-SET,private,DIRECT
-  - RULE-SET,bilibili,DIRECT
   - RULE-SET,applications,DIRECT
   - RULE-SET,proxylist,PROXY
   - RULE-SET,HTB,hackthebox
