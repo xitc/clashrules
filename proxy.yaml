@@ -171,13 +171,13 @@ rule-providers:
     url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/telegramip.mrs"
     interval: 86400  
 rules:
-  - RULE-SET,trackerslist,pt
   - IP-CIDR,221.228.32.0/24,PROXY
   - IP-CIDR,154.21.91.0/24,DIRECT
   - RULE-SET,private,DIRECT
   - RULE-SET,applications,DIRECT
   - RULE-SET,proxylist,PROXY
   - RULE-SET,HTB,hackthebox
+  - RULE-SET,trackerslist,pt
   - RULE-SET,youtube,📹 油管视频
   - RULE-SET,ai,🤖 人工智能
   - RULE-SET,microsoft-cn,🪟 微软服务
