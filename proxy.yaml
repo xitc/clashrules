@@ -21,7 +21,7 @@ proxy-groups:
   - name: PROXY
     type: select
     proxies:
-  - name: pt 
+  - name: trackerslist
     type: select
     proxies:
       - DIRECT
@@ -177,7 +177,7 @@ rules:
   - RULE-SET,applications,DIRECT
   - RULE-SET,proxylist,PROXY
   - RULE-SET,HTB,hackthebox
-  - RULE-SET,trackerslist,pt
+  - RULE-SET,trackerslist,trackerslist
   - RULE-SET,youtube,📹 油管视频
   - RULE-SET,ai,🤖 人工智能
   - RULE-SET,microsoft-cn,🪟 微软服务
