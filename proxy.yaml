@@ -21,6 +21,12 @@ proxy-groups:
   - name: PROXY
     type: select
     proxies:
+  - name: PT 
+    type: select
+    proxies:
+      - DIRECT
+      - PROXY
+    proxies:
   - name: 🤖 人工智能
     type: select
     proxies:
@@ -165,7 +171,7 @@ rule-providers:
     url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/telegramip.mrs"
     interval: 86400  
 rules:
-  - RULE-SET,trackerslist,DIRECT
+  - RULE-SET,trackerslist,PT
   - IP-CIDR,221.228.32.0/24,PROXY
   - IP-CIDR,154.21.91.0/24,DIRECT
   - RULE-SET,private,DIRECT
