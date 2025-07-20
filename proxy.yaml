@@ -64,6 +64,13 @@ rule-providers:
     path: ./rules/fakeip-filter.mrs
     url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter.mrs"
     interval: 86400
+  directlist:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/directlist.mrs
+    url: "https://github.com/xitc/clashrules/releases/download/v0.1/directlist.mrs"
+    interval: 86400  
   proxylist:
     type: http
     behavior: domain
