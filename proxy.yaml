@@ -187,6 +187,7 @@ rules:
   - IP-CIDR,221.228.32.0/24,PROXY
   - IP-CIDR,154.21.91.0/24,DIRECT
   - RULE-SET,private,DIRECT
+  - RULE-SET,directlist,DIRECT
   - RULE-SET,bilibili,DIRECT
   - RULE-SET,applications,DIRECT
   - RULE-SET,proxylist,PROXY
