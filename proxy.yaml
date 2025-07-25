@@ -13,9 +13,9 @@ dns:
     fake-ip-range: 198.18.0.1/16
     fake-ip-filter: ['*.lan', lens.l.google.com, '*.srv.nintendo.net', '*.stun.playstation.net', 'xbox.*.*.microsoft.com', '*.xboxlive.com', '*.msftncsi.com', '*.msftconnecttest.com']
     default-nameserver: [119.29.29.29, 223.5.5.5]
-    nameserver: [system, 119.29.29.29, 223.5.5.5]
+    nameserver: [ 119.29.29.29, 223.5.5.5]
     fallback: [8.8.8.8, 1.1.1.1]
-    fallback-filter: { geoip: true, geoip-code: CN }
+    fallback-filter: { geoip: true, geoip-code: CN, ipcidr: 0.0.0.0 }
 proxies: ~
 proxy-groups:
   - name: PROXY
