@@ -189,6 +189,7 @@ rule-providers:
     url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/telegramip.mrs"
     interval: 86400  
 rules:
+  - IP-CIDR,103.244.89.0/24,PROXY
   - IP-CIDR,221.228.32.0/24,PROXY
   - IP-CIDR,154.21.91.0/24,DIRECT
   - RULE-SET,private,DIRECT
