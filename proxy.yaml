@@ -57,7 +57,7 @@ proxy-groups:
     proxies:
       - PROXY
       - DIRECT
-  - name : twitter
+  - name : Twitter
     type: select
     proxies:
       - PROXY
@@ -77,7 +77,7 @@ rules:
   - "RULE-SET,youtube,📹 油管视频"
   - "RULE-SET,category-ai-!cn,💬 AI 服务"
   - "RULE-SET,microsoft,Ⓜ️ 微软服务"
-  - "RULE-SET,twitter,twitter"
+  - "RULE-SET,twitter,Twitter"
   - "RULE-SET,cn,DIRECT,no-resolve"
   - "RULE-SET,private,DIRECT,no-resolve"
   - "RULE-SET,google,🔍 谷歌服务,no-resolve"
@@ -150,8 +150,8 @@ rule-providers:
   twitter:
     type: http
     format: mrs
-    behavior: domain
-    url: "https://github.com/MetaCubeX/meta-rules-dat/blob/meta/geo/geoip/twitter.mrs"
+    behavior: ipcidr
+    url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/twitter.mrs"
     path: ./ruleset/twitter.mrs
     interval: 86400  
   private:
